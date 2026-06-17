@@ -1,4 +1,5 @@
 // CORE: entrypoint + server wiring. Keep stack (Express+React Router) stable; extend via middleware/routes.
+import "reflect-metadata";
 import "dotenv/config";
 import { createRequestHandler } from "@react-router/express";
 import type { ServerBuild } from "react-router";
