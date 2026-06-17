@@ -1,0 +1,80 @@
+<style>
+.mode-landscape .sl-grid { grid-template-columns: repeat(2, 1fr); }
+.mode-portrait .sl-grid { grid-template-columns: 1fr; }
+.mode-landscape .sl-bottom { flex-direction: row; gap: 1.5rem; }
+.mode-portrait .sl-bottom { flex-direction: column; gap: 1rem; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full flex flex-col p-10">
+
+    <!-- Header -->
+    <div class="mb-5">
+      <span class="text-xs font-bold tracking-widest uppercase text-slate-400">Business Value</span>
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-1">What PawHub delivers</h2>
+    </div>
+
+    <!-- 4 Metric cards -->
+    <div class="sl-grid grid gap-3">
+
+      <div class="p-4 rounded-2xl flex gap-4 items-center" style="background:#FFF7F3; border:1px solid #FFE0CC;">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 text-2xl" style="background:#FF6B35; color:white;">0</div>
+        <div>
+          <p class="text-xl font-extrabold text-slate-900 leading-none">Zero app-switching</p>
+          <p class="text-xs text-slate-500 mt-1">Pet owners handle every care task — shop, book, board, ask — in one account with one login.</p>
+        </div>
+      </div>
+
+      <div class="p-4 rounded-2xl flex gap-4 items-center" style="background:#E8FAFA; border:1px solid #B2EBEA;">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 text-2xl" style="background:#2EC4B6; color:white;">24/7</div>
+        <div>
+          <p class="text-xl font-extrabold text-slate-900 leading-none">Always-on AI support</p>
+          <p class="text-xs text-slate-500 mt-1">AI assistant answers product questions, recommends by breed and age, books services any time of day.</p>
+        </div>
+      </div>
+
+      <div class="p-4 rounded-2xl flex gap-4 items-center" style="background:#F0FAF0; border:1px solid #C3E6C3;">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 text-2xl font-bold" style="background:#8BC34A; color:white; font-size:1.1rem;">3×</div>
+        <div>
+          <p class="text-xl font-extrabold text-slate-900 leading-none">Three revenue streams</p>
+          <p class="text-xs text-slate-500 mt-1">Product sales, veterinary service bookings, and hotel reservations — all tracked in one dashboard.</p>
+        </div>
+      </div>
+
+      <div class="p-4 rounded-2xl flex gap-4 items-center" style="background:#F5F0FF; border:1px solid #D9CEFF;">
+        <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 text-2xl" style="background:#7C3AED; color:white;">1</div>
+        <div>
+          <p class="text-xl font-extrabold text-slate-900 leading-none">One operations hub</p>
+          <p class="text-xs text-slate-500 mt-1">Admins manage inventory, vet schedules, hotel rooms, bookings, and sales reports from a single view.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ROI Summary block -->
+    <div class="sl-bottom flex mt-4">
+      <div class="flex-1 rounded-2xl p-4 flex items-center gap-5" style="background:#1e293b;">
+        <div class="flex-shrink-0">
+          <p class="text-xs font-bold tracking-widest uppercase" style="color:#94a3b8;">Key Outcome</p>
+          <p class="text-2xl font-extrabold mt-1 leading-tight" style="color:#fff;">Pet owners never<br>leave the platform</p>
+        </div>
+        <div class="w-px self-stretch" style="background:#334155;"></div>
+        <div class="flex flex-col gap-2">
+          <div class="flex items-center gap-2">
+            <div class="w-2 h-2 rounded-full flex-shrink-0" style="background:#FF6B35;"></div>
+            <p class="text-xs" style="color:#cbd5e1;">Repeat purchases from integrated product recommendations</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="w-2 h-2 rounded-full flex-shrink-0" style="background:#2EC4B6;"></div>
+            <p class="text-xs" style="color:#cbd5e1;">Higher booking completion with reminders &amp; AI-guided flow</p>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="w-2 h-2 rounded-full flex-shrink-0" style="background:#8BC34A;"></div>
+            <p class="text-xs" style="color:#cbd5e1;">Reduced staff inquiry time — AI handles common questions first</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
