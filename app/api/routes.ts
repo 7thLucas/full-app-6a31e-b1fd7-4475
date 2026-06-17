@@ -3,6 +3,7 @@ import { readdir } from "node:fs/promises";
 import { pathToFileURL } from "node:url";
 import { Router } from "express";
 import { createLogger } from "~/lib/logger";
+import pawHubRoutes from "./pawhub.routes";
 
 type RouteModule = {
   default?: ReturnType<typeof Router>;
@@ -12,6 +13,9 @@ const logger = createLogger("ApiRoutes");
 const routeFilePattern = /\.routes\.(ts|tsx|js|mjs|cjs)$/;
 
 const router = Router();
+
+// PawHub domain routes
+router.use("/", pawHubRoutes);
 
 async function discoverRouteFiles(): Promise<string[]> {
   const modulesPath = path.join(process.cwd(), "app", "modules");
