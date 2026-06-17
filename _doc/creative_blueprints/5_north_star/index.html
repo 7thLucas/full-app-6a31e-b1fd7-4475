@@ -1,0 +1,115 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; gap: 1.5rem; }
+.mode-portrait .sl-layout { flex-direction: column; gap: 1rem; }
+.mode-landscape .sl-left { width: 48%; }
+.mode-landscape .sl-right { width: 52%; }
+.mode-portrait .sl-left { width: 100%; }
+.mode-portrait .sl-right { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full flex flex-col p-10">
+
+    <!-- Header -->
+    <div class="mb-4">
+      <span class="text-xs font-bold tracking-widest uppercase text-slate-400">North Star Metric</span>
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-1">Weekly Verified Operations</h2>
+      <p class="text-xs text-slate-500 mt-1">The number PawHub lives or dies by — real transactions completed by real users each week.</p>
+    </div>
+
+    <div class="sl-layout flex flex-1">
+
+      <!-- Left: Operations defined -->
+      <div class="sl-left flex flex-col gap-2.5">
+
+        <p class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Verified Operations (3 types)</p>
+
+        <div class="p-3 rounded-xl" style="background:#FFF7F3; border:1px solid #FFE0CC;">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-base">🛒</span>
+            <p class="text-sm font-bold text-slate-800">Order Completed</p>
+          </div>
+          <p class="text-xs text-slate-500">A pet product purchase submitted and confirmed by a customer in the app.</p>
+        </div>
+
+        <div class="p-3 rounded-xl" style="background:#E8FAFA; border:1px solid #B2EBEA;">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-base">🩺</span>
+            <p class="text-sm font-bold text-slate-800">Vet Appointment Booked</p>
+          </div>
+          <p class="text-xs text-slate-500">A veterinary appointment scheduled and confirmed through the booking system.</p>
+        </div>
+
+        <div class="p-3 rounded-xl" style="background:#F0FAF0; border:1px solid #C3E6C3;">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="text-base">🏨</span>
+            <p class="text-sm font-bold text-slate-800">Hotel Stay Reserved</p>
+          </div>
+          <p class="text-xs text-slate-500">A pet boarding or daycare reservation submitted and confirmed in the platform.</p>
+        </div>
+
+        <!-- Assumption chips -->
+        <div class="mt-1 p-3 rounded-xl" style="background:#FFFBEB; border:1px dashed #F59E0B;">
+          <p class="text-xs font-bold text-amber-700 mb-2">Assumptions — adjust these to your numbers</p>
+          <div class="flex flex-col gap-1">
+            <div class="flex justify-between items-center">
+              <span class="text-xs text-slate-600">Active pet owners / week</span>
+              <span class="text-xs font-bold px-2 py-0.5 rounded" style="background:#FDE68A; color:#92400e;">50</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-xs text-slate-600">Avg ops per owner / week</span>
+              <span class="text-xs font-bold px-2 py-0.5 rounded" style="background:#FDE68A; color:#92400e;">1.5</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Projection & value -->
+      <div class="sl-right flex flex-col gap-2.5">
+
+        <!-- WVO calculation -->
+        <div class="p-4 rounded-2xl" style="background:#1e293b;">
+          <p class="text-xs font-bold tracking-widest uppercase mb-2" style="color:#94a3b8;">Weekly Verified Operations</p>
+          <div class="text-xs mb-3" style="color:#94a3b8;">
+            <span style="color:#fff;">50 pet owners</span> × <span style="color:#fff;">1.5 ops/owner</span> =
+          </div>
+          <p class="font-extrabold" style="font-size:2.8rem; line-height:1; color:#FF6B35;">75</p>
+          <p class="text-sm font-semibold mt-1" style="color:#e2e8f0;">verified operations / week</p>
+        </div>
+
+        <!-- Value derivation -->
+        <div class="p-4 rounded-2xl flex-1" style="background:#F8FAFC; border:1px solid #e2e8f0;">
+          <p class="text-xs font-bold tracking-widest uppercase text-slate-500 mb-3">Projected Value</p>
+          <div class="flex flex-col gap-2 text-xs text-slate-600">
+            <div class="flex justify-between">
+              <span>Time saved per op vs. fragmented tools</span>
+              <span class="font-bold text-slate-800">20 min</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Staff / owner hourly cost</span>
+              <span class="font-bold text-slate-800">$15 / hr</span>
+            </div>
+            <div class="flex justify-between pb-2" style="border-bottom:1px solid #e2e8f0;">
+              <span>Value per operation</span>
+              <span class="font-bold text-slate-800">$5.00</span>
+            </div>
+            <div class="flex justify-between items-center pt-1">
+              <span>Weekly value  <span class="text-slate-400">(75 × $5)</span></span>
+              <span class="font-extrabold text-slate-900">$375 / wk</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span>Annual value  <span class="text-slate-400">(× 52)</span></span>
+              <span class="font-extrabold text-slate-900 text-base">$19,500 / yr</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Framing label -->
+        <p class="text-xs text-center font-medium text-slate-400 italic">Projected impact — based on your inputs. Adjust assumption chips to match your real numbers.</p>
+
+      </div>
+    </div>
+
+  </div>
+</section>
