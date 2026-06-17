@@ -1,0 +1,52 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-visual { display: block; }
+.mode-portrait .sl-visual { display: none; }
+.mode-landscape .sl-content { width: 55%; }
+.mode-portrait .sl-content { width: 100%; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex w-full h-full">
+
+    <!-- Left: Content -->
+    <div class="sl-content flex flex-col justify-between p-12">
+      <div>
+        <span class="inline-block text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full" style="background:#FF6B35; color:#fff;">Pet Care Platform</span>
+        <h1 class="mt-5 font-extrabold leading-tight text-slate-900" style="font-size:2.6rem; line-height:1.15;">
+          Everything your<br>pet needs.<br>
+          <span class="inline-block mt-1 px-2 rounded" style="background:#FF6B35; color:#fff;">One place.</span>
+        </h1>
+        <p class="mt-5 text-base leading-relaxed text-slate-600" style="max-width:28rem;">
+          Shop pet products, book vet appointments, reserve hotel stays, and get AI-powered guidance — all in one warm, trustworthy platform.
+        </p>
+
+        <!-- Feature pills -->
+        <div class="flex flex-wrap gap-2 mt-6">
+          <span class="text-xs font-medium px-3 py-1 rounded-full text-slate-700" style="background:#FFF0E8; border:1px solid #FFD5BE;">🛍 Pet Shop</span>
+          <span class="text-xs font-medium px-3 py-1 rounded-full text-slate-700" style="background:#E8FAFA; border:1px solid #B2EBEA;">🩺 Vet Booking</span>
+          <span class="text-xs font-medium px-3 py-1 rounded-full text-slate-700" style="background:#F0FAF0; border:1px solid #C3E6C3;">🏨 Pet Hotel</span>
+          <span class="text-xs font-medium px-3 py-1 rounded-full text-slate-700" style="background:#F5F0FF; border:1px solid #D9CEFF;">🤖 AI Assistant</span>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-1">
+        <data-attribution />
+        <p class="text-xs text-slate-400 mt-1">PawHub · Pet Care &amp; Shop Management</p>
+      </div>
+    </div>
+
+    <!-- Right: Visual -->
+    <div class="sl-visual flex-1 relative overflow-hidden">
+      <img
+        src="https://api-stag.qb-deck.quantumbyte.ai/common/image-generation?prompt=warm%20cozy%20modern%20pet%20shop%20interior%20with%20happy%20golden%20retriever%20and%20orange%20tabby%20cat%2C%20clean%20shelves%20with%20pet%20products%2C%20soft%20warm%20lighting%2C%20teal%20and%20orange%20accents%2C%20professional%20photography"
+        alt="PawHub pet care"
+        class="w-full h-full object-cover"
+      />
+      <div class="absolute inset-0" style="background:linear-gradient(to right, rgba(255,255,255,0.18) 0%, transparent 30%);"></div>
+      <div class="absolute bottom-0 left-0 right-0 h-1" style="background:linear-gradient(to right, #FF6B35, #2EC4B6);"></div>
+    </div>
+
+  </div>
+</section>
