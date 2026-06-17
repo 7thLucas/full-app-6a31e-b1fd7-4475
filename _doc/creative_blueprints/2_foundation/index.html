@@ -1,0 +1,103 @@
+<style>
+.mode-landscape .sl-layout { flex-direction: row; }
+.mode-portrait .sl-layout { flex-direction: column; }
+.mode-landscape .sl-col { width: 50%; }
+.mode-portrait .sl-col { width: 100%; }
+.mode-landscape .sl-divider { width: 1px; height: auto; margin: 2.5rem 0; }
+.mode-portrait .sl-divider { width: auto; height: 1px; margin: 0 2.5rem; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="w-full h-full flex flex-col p-10">
+
+    <!-- Header -->
+    <div class="mb-6">
+      <span class="text-xs font-bold tracking-widest uppercase text-slate-400">The Foundation</span>
+      <h2 class="text-2xl font-extrabold text-slate-900 mt-1">Why PawHub exists</h2>
+    </div>
+
+    <!-- Two-column body -->
+    <div class="sl-layout flex flex-1 gap-0 overflow-hidden">
+
+      <!-- Problem -->
+      <div class="sl-col flex flex-col pr-8">
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-8 h-8 rounded-lg flex items-center justify-center text-white text-sm font-bold flex-shrink-0" style="background:#e53e3e;">✕</div>
+          <h3 class="text-base font-bold text-slate-800">The Problem</h3>
+        </div>
+        <div class="flex flex-col gap-3 flex-1">
+          <div class="flex gap-3 items-start p-3 rounded-xl" style="background:#FFF5F5; border:1px solid #FED7D7;">
+            <span class="text-lg flex-shrink-0">📱</span>
+            <div>
+              <p class="text-sm font-semibold text-slate-800">Multiple apps, multiple logins</p>
+              <p class="text-xs text-slate-500 mt-0.5">Pet shop, vet system, boarding service — each a separate account with separate workflows.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start p-3 rounded-xl" style="background:#FFF5F5; border:1px solid #FED7D7;">
+            <span class="text-lg flex-shrink-0">📋</span>
+            <div>
+              <p class="text-sm font-semibold text-slate-800">Pet data re-entered everywhere</p>
+              <p class="text-xs text-slate-500 mt-0.5">Breed, age, medical history — typed again at every service, with no shared record.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start p-3 rounded-xl" style="background:#FFF5F5; border:1px solid #FED7D7;">
+            <span class="text-lg flex-shrink-0">🕐</span>
+            <div>
+              <p class="text-sm font-semibold text-slate-800">No instant answers, no reminders</p>
+              <p class="text-xs text-slate-500 mt-0.5">Owners call or wait for replies to basic questions about products, services, or bookings.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start p-3 rounded-xl" style="background:#FFF5F5; border:1px solid #FED7D7;">
+            <span class="text-lg flex-shrink-0">📊</span>
+            <div>
+              <p class="text-sm font-semibold text-slate-800">Businesses manage across tools</p>
+              <p class="text-xs text-slate-500 mt-0.5">Sales, bookings, inventory, and schedules tracked in disconnected spreadsheets and systems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Divider -->
+      <div class="sl-divider flex-shrink-0" style="background:#e2e8f0;"></div>
+
+      <!-- Solution -->
+      <div class="sl-col flex flex-col pl-8">
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-8 h-8 rounded-lg flex items-center justify-center text-white text-sm font-bold flex-shrink-0" style="background:#2EC4B6;">✓</div>
+          <h3 class="text-base font-bold text-slate-800">The Solution</h3>
+        </div>
+        <div class="flex flex-col gap-3 flex-1">
+          <div class="flex gap-3 items-start p-3 rounded-xl" style="background:#F0FAFA; border:1px solid #B2EBEA;">
+            <span class="text-lg flex-shrink-0">🏠</span>
+            <div>
+              <p class="text-sm font-semibold text-slate-800">One platform, every need</p>
+              <p class="text-xs text-slate-500 mt-0.5">Shop, vet, hotel, and AI assistant in a single account — no app-switching required.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start p-3 rounded-xl" style="background:#F0FAFA; border:1px solid #B2EBEA;">
+            <span class="text-lg flex-shrink-0">🐾</span>
+            <div>
+              <p class="text-sm font-semibold text-slate-800">Shared pet profiles</p>
+              <p class="text-xs text-slate-500 mt-0.5">Name, breed, age, and medical info stored once — used across every service automatically.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start p-3 rounded-xl" style="background:#F0FAFA; border:1px solid #B2EBEA;">
+            <span class="text-lg flex-shrink-0">🤖</span>
+            <div>
+              <p class="text-sm font-semibold text-slate-800">AI assistant available 24/7</p>
+              <p class="text-xs text-slate-500 mt-0.5">Answers questions, recommends products, helps book services, and escalates when needed.</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-start p-3 rounded-xl" style="background:#F0FAFA; border:1px solid #B2EBEA;">
+            <span class="text-lg flex-shrink-0">📈</span>
+            <div>
+              <p class="text-sm font-semibold text-slate-800">Unified admin dashboard</p>
+              <p class="text-xs text-slate-500 mt-0.5">Products, vet schedules, hotel rooms, bookings, and revenue — one view, one system.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
