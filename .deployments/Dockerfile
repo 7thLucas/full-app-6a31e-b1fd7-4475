@@ -1,5 +1,5 @@
 #### Stage 1: Builder – install all deps & build React Router
-FROM oven/bun:1-slim AS builder
+FROM oven/bun:1.3.11-slim AS builder
 
 WORKDIR /app
 
@@ -17,7 +17,7 @@ RUN bun run build
 
 
 #### Stage 2: Runtime – minimal image for running the server
-FROM oven/bun:1-slim AS runner
+FROM oven/bun:1.3.11-slim AS runner
 
 WORKDIR /app
 
